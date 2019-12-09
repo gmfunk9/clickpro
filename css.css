@@ -1,0 +1,72 @@
+:root {
+		--main-bg-color: white;
+}
+
+* {
+		box-sizing: border-box;
+}
+
+html {  -webkit-touch-callout: none; /* iOS Safari */    -webkit-user-select: none; /* Safari */     -khtml-user-select: none; /* Konqueror HTML */       -moz-user-select: none; /* Old versions of Firefox */        -ms-user-select: none; /* Internet Explorer/Edge */            user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */}
+
+
+.alignCenter {
+		align-items: center;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		justify-content: center;
+}
+
+#clicker-game {
+		border: 1px solid;
+
+}
+
+#clicker-game_clicker {
+		border: 2px solid red;
+		margin: .1em;
+		background-color: var(--main-bg-color);
+		position: relative;
+		z-index: 9999;
+}
+
+.clicker-game_clicker_levelup {
+		background: white;
+		left: calc(50% - (180px / 2));
+		width: 180px;
+		display: none;
+		position: absolute;
+		z-index: 99;
+		border: 2px red solid;
+		padding: 0em 1em 0em 1em;
+		/* overflow: visible !important; */
+
+}
+
+#clicker-game_mult {
+		border: 2px solid green;
+		margin: .1em;
+
+}
+
+#clicker-game_score-counter {
+		border: 2px solid blue;
+		margin: .1em;
+		position: relative;
+
+}
+
+#clicker-game_score-counter h2 {
+		z-index: 1;
+		position: relative;
+}
+
+#clicker-game_score-counter_progress {
+		/* border: pink solid 5px; */
+		background: pink;
+		position: absolute;
+		bottom: 0px;
+		height: 100%;
+		/* opacity: .9; */
+		z-index: 0;
+}
